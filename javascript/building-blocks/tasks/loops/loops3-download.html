@@ -41,7 +41,17 @@
 
 
     // Add your code here
+    while (i > 1) {
+      
+      if(isPrime(i) && i !== 2) {
+        para.innerText += `${i} - `;
+      }
+      else if (i === 2) {
+        para.innerText += `${i}`;
+      }
 
+      i--;
+    }
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
